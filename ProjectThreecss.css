@@ -1,0 +1,40 @@
+ body {
+            display: flex;
+        }
+        #navbar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        #main-doc {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .nav-link {
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav-link:hover {
+            background-color: #ddd;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            #navbar {
+                position: static;
+                width: 100%;
+                height: auto;
+                box-shadow: none;
+            }
+            #main-doc {
+                margin-left: 0;
+            }
+        }
